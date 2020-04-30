@@ -12,11 +12,11 @@ class Formatter {
     let exemptWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     
     return phrase.map((s, i) => {
-    if (exemptWords.includes(s) && i !== 0 ) {
-      return s
+      if (exemptWords.includes(s) && i !== 0 ) {
+        return s
+      }
+      else
+       return s.charAt(0).toUpperCase() + s.substring(1)
+      }).join(" ").toString()
     }
-    else
-     return s.charAt(0).toUpperCase() + s.substring(1)
-  }).join(" ").toString()
-}
-}
+  }
