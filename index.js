@@ -8,7 +8,6 @@ class Formatter {
   }
   
   static titleize(string) {
-    let newArray = [];
     let phrase = string.split(" ");
     let exemptWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     
@@ -20,5 +19,4 @@ class Formatter {
       s.charAt(0).toUpperCase() + s.substring(1).join(' ');
       newArray.push(s);
   })
-    return newArray
 }
