@@ -11,7 +11,7 @@ class Formatter {
     let phrase = string.split(" ");
     let exemptWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     
-    return phrase.map((s) => {
+    return phrase.map((s, i) => {
     if (exemptWords.includes(s) && i !== 0 ) {
       return s
     }
